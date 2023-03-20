@@ -8,6 +8,15 @@ package homework_43;
 
  */
 
-public class FlatHome extends Home {
-  private int entryNumbers;
+public class Apartments extends House {
+  private int entrances;
+
+  public Apartments(String address, int entrances) {
+    super(address);
+    this.entrances = entrances;
+  }
+
+  public int getEntrances() {
+    return entrances;
+  }
 }

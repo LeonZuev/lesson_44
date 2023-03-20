@@ -8,6 +8,9 @@ package homework_43;
 
  */
 
-public class PrivateHome extends Home {
+public class Mansion extends House {
+  public Mansion(String address) {
+    super(address);
+  }
 
 }
