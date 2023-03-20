@@ -11,6 +11,8 @@ package homework_43;
 public class Apartments extends House {
   private int entrances;
 
+  // кол-во подъездов дополнительно
+
   public Apartments(String address, int entrances) {
     super(address);
     this.entrances = entrances;
@@ -18,5 +20,13 @@ public class Apartments extends House {
 
   public int getEntrances() {
     return entrances;
+  }
+  @Override
+  public String toString() {
+    return "Многоквартирный дом по адресу " + getAddress() + ", " + entrances;
+  }
+  @Override
+  public void destroy() {
+    System.out.printf("Вы снесли многоквартирный дом. %d подъездов!", entrances);
   }
 }

@@ -13,4 +13,14 @@ public class Mansion extends House {
     super(address);
   }
 
+  @Override
+  public String toString() {
+    return "Частный дом по адресу " + getAddress(); // гет, потому что адресс приватный
+  }
+
+  @Override
+  public void destroy() {
+    System.out.println("Вы снесли частный дом");
+ // TODO ифэлс для проверки уже снесённых домов
+  }
 }
